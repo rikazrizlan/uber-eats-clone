@@ -35,8 +35,15 @@ const items = [
 
 export default function Categories() {
     return (
-        <View>
-                    <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+        <View
+          style={{
+            marginTop: 5,
+            backgroundColor: '#fff',
+            paddingVertical: 10,
+            paddingLeft: 20
+          }}
+        >
+            <ScrollView horizontal showsHorizontalScrollIndicator={false}>
             {
                 items.map((item, index) => (
                     <View key={index}
